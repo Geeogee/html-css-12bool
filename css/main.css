@@ -29,7 +29,7 @@ div[class*="col-"]:first-child {
     border-left: 0;
   }
 
-.container > .row:last-child > div[class*="col-"] {
+.padding10 {
   padding: 10px;
 }
 
