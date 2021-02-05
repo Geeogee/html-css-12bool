@@ -1,4 +1,4 @@
-
+/* Base CSS */
 .container {
   border: 4px solid #000;
   margin: 20px auto;
@@ -11,8 +11,8 @@
   transform: translate(-50%,-50%);
 }
 
+/* Selects all divs with "col-" in class attrubute */
 div[class*="col-"] {
-  /* debug */
   background-color: #ffc0cb;
   min-height: 200px;
   border: 1px solid #000;
@@ -25,7 +25,7 @@ div[class*="col-"] {
   border-top: 0;
 }
 
-  div[class*="col-"]:first-child {
+div[class*="col-"]:first-child {
     border-left: 0;
   }
 
@@ -33,11 +33,7 @@ div[class*="col-"] {
   padding: 10px;
 }
 
-.row .row > div[class*="col-"] {
-  background-color: #f07f80;
-  border: 4px solid #FFF;
-}
-
+/* Nested col */
 .row .row > div[class*="col-"] {
   background-color: #f07f80;
   border: 1px solid #FFF;
