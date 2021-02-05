@@ -1,11 +1,14 @@
-body {
-  background-color: red;
+
+.container {
+  border: 4px solid #000;
+  margin: 20px auto;
 }
 
-/* debug */
-.container {
-  background-color: blue;
-  border: 1px solid #000;
+.valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 div[class*="col-"] {
@@ -13,13 +16,39 @@ div[class*="col-"] {
   background-color: #ffc0cb;
   min-height: 200px;
   border: 1px solid #000;
+  border-bottom: 0;
+  border-right: 0;
+  position: relative;
 }
 
-.container > .row:last-child > [class*="col-"] {
+.row:first-child > div[class*="col-"] {
+  border-top: 0;
+}
+
+  div[class*="col-"]:first-child {
+    border-left: 0;
+  }
+
+.container > .row:last-child > div[class*="col-"] {
   padding: 10px;
 }
 
-.row .row > [class*="col-"] {
+.row .row > div[class*="col-"] {
+  background-color: #f07f80;
+  border: 4px solid #FFF;
+}
+
+.row .row > div[class*="col-"] {
   background-color: #f07f80;
   border: 1px solid #FFF;
+}
+
+.row .row > div[class*="col-"] {
+  background-color: #f07f80;
+  border-right: 0;
+}
+
+.row .row > div[class*="col-"]:last-child {
+  background-color: #f07f80;
+  border-right: 1px solid #FFF;;
 }
