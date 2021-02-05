@@ -15,10 +15,11 @@ div[class*="col-"] {
   border: 1px solid #000;
 }
 
-.row:last-child > [class*="col-"] {
+.container > .row:last-child > [class*="col-"] {
   padding: 10px;
 }
 
 .row .row > [class*="col-"] {
-  background-color: blue;
+  background-color: #f07f80;
+  border: 1px solid #FFF;
 }
